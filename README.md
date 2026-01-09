@@ -2,16 +2,6 @@
 
 Website Sistem Informasi Geografis (SIG) untuk Desa Jambu menggunakan HTML, CSS, JavaScript, dan Leaflet.js.
 
-## Fitur
-
-- ✅ **Landing Page** dengan background video dan navbar login admin
-- ✅ **Peta Interaktif** menggunakan Leaflet.js
-- ✅ **Layer Informasi** (Penduduk, Lahan, Fasilitas Umum)
-- ✅ **Pencarian Lokasi** dengan fitur search
-- ✅ **Manajemen Data** (Input, Edit, Hapus data geografis)
-- ✅ **Export Laporan** (PDF, Excel, CSV, Gambar)
-- ✅ **Dashboard Statistik** dengan visualisasi data
-
 
 ## Cara Menggunakan
 
