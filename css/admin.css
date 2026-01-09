@@ -1,0 +1,21 @@
+.admin-container { display:flex; height: calc(100vh - 70px); }
+.admin-sidebar { width: 360px; padding: 16px; overflow:auto; background:#fff; border-right:1px solid #e6e6e6 }
+.admin-main { flex:1; }
+.form-row { margin-bottom:10px }
+.form-row label { display:block; font-weight:600; margin-bottom:6px }
+.form-row input, .form-row select, .form-row textarea { width:100%; padding:8px; box-sizing:border-box }
+.list-item { padding:8px; border:1px solid #eee; margin-bottom:8px; border-radius:6px; display:flex; justify-content:space-between; align-items:center }
+.list-item .meta { max-width:70% }
+.btn { padding:8px 10px; border-radius:6px; cursor:pointer; border:none }
+.btn-danger { background:#e74c3c; color:#fff }
+.btn-primary { background:#3498db; color:#fff }
+.btn-ghost { background:transparent; border:1px solid #ccc }
+#mapAdmin { height:100%; }
+.topbar { height:70px; display:flex; align-items:center; justify-content:space-between; padding:0 16px; background:#fff; border-bottom:1px solid #e6e6e6 }
+
+/* small responsive tweak */
+@media (max-width: 800px) {
+    .admin-container { flex-direction:column }
+    .admin-sidebar { width:100%; height:auto; border-right:none; border-bottom:1px solid #e6e6e6 }
+    #mapAdmin { height:60vh }
+}

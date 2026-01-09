@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIG Desa Jambu - Sistem Informasi Geografis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SIG Desa Jambu</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#fitur">Fitur</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Landing Page -->
+    <section class="landing" id="home">
+        <div class="image-background">
+            <img src="jungpiring.webp" alt="Desa Jambu" id="backgroundImage">
+            <div class="image-overlay"></div>
+        </div>
+        
+        <div class="landing-content">
+            <h1 class="landing-title">Sistem Informasi Geografis</h1>
+            <h2 class="landing-subtitle">Desa Jambu</h2>
+            <p class="landing-description">
+                Platform digital untuk mengelola dan memvisualisasikan data geografis Desa Jambu.
+                Akses informasi fasilitas umum meliputi pendidikan, tempat ibadah, dan fasilitas kesehatan dengan mudah.
+            </p>
+            <a href="app.html" class="btn-mulai">Mulai</a>
+        </div>
+    </section>
+
+    <!-- Tentang Section -->
+    <section class="section-tentang" id="tentang">
+        <div class="container">
+            <h2>Tentang SIG Desa Jambu</h2>
+            <p>
+                Sistem Informasi Geografis (SIG) Desa Jambu adalah aplikasi berbasis web yang dirancang 
+                untuk membantu pengelolaan data geografis desa secara digital. Dengan teknologi peta 
+                interaktif, sistem ini memudahkan akses informasi fasilitas umum meliputi pendidikan, tempat ibadah, dan fasilitas kesehatan dengan mudah.
+            </p>
+        </div>
+    </section>
+
+    <!-- Fitur Section -->
+    <section class="section-fitur" id="fitur">
+        <div class="container">
+            <h2>Fitur Aplikasi</h2>
+            <div class="fitur-grid">
+                <div class="fitur-card">
+                    <div class="fitur-icon">🗺️</div>
+                    <h3>Peta Interaktif</h3>
+                    <p>Visualisasi peta desa dengan teknologi Leaflet.js yang responsif dan mudah digunakan</p>
+                </div>
+                <div class="fitur-card">
+                    <div class="fitur-icon">📊</div>
+                    <h3>Layer Informasi</h3>
+                    <p>Akses informasi pendidikan, tempat ibadah, dan fasilitas kesehatan dalam berbagai layer</p>
+                </div>
+                <div class="fitur-card">
+                    <div class="fitur-icon">📈</div>
+                    <h3>Dashboard Statistik</h3>
+                    <p>Visualisasi statistik dan analisis data dalam bentuk dashboard interaktif</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SIG Desa Jambu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/landing.js"></script>
+</body>
+</html>
+

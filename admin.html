@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - SIG Desa Jambu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-container">
+            <div class="header-logo">
+                <h1>Admin - SIG Desa Jambu</h1>
+            </div>
+            <nav class="header-nav">
+                <a href="app.html" class="btn-back">
+                    <i class="fas fa-arrow-left"></i> Kembali
+                </a>
+                <button id="btnLogout" class="btn btn-ghost"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="topbar"></div>
+
+    <div class="admin-container">
+        <aside class="admin-sidebar">
+            <h3>Tambah / Edit Data</h3>
+            <div class="form-row">
+                <label>Nama</label>
+                <input id="fieldNama" placeholder="Nama lokasi">
+            </div>
+            <div class="form-row">
+                <label>Tipe</label>
+                <select id="fieldTipe">
+                    <option value="pendidikan">Pendidikan</option>
+                    <option value="tempatibadah">Tempat ibadah</option>
+                    <option value="kesehatan">Kesehatan</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label>Deskripsi</label>
+                <textarea id="fieldDeskripsi" rows="2"></textarea>
+            </div>
+            <div class="form-row">
+                <label>Latitude</label>
+                <input id="fieldLat" placeholder="-6.52">
+            </div>
+            <div class="form-row">
+                <label>Longitude</label>
+                <input id="fieldLng" placeholder="110.70">
+            </div>
+            <div style="display:flex;gap:8px;">
+                <button id="btnSave" class="btn btn-primary">Simpan</button>
+                <button id="btnCancel" class="btn btn-ghost">Batal</button>
+            </div>
+
+            <hr>
+            <h3>Daftar Titik Lokasi</h3>
+            <div id="listContainer"></div>
+            <p style="margin-top:12px;color:#777">Klik peta untuk mengisi koordinat pada form.</p>
+        </aside>
+
+        <main class="admin-main">
+            <div id="mapAdmin"></div>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
